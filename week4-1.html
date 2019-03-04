@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Daniel Wight">
+    <meta name="description" content="week2-2.html assignment">
+    <link rel="icon" href="images/week2-2favicon.ico">
+
+    <title>Resale City</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homework.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--custom javascript for week4-1-->
+    <script src="js/week4-1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="relocate_home()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="dropdown">
+                        <button id="homeButton" onclick="location.href='home.html'">Home</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week1-1.html">Week 1-1</a><br />
+                            <a class="dropdown-item" href="week1-2.html">Week 1-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 2
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week2-1.html">Week 2-1</a><br />
+                            <a class="dropdown-item" href="week2-2.html">Week 2-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 3
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week3-1.html">Week 3-1</a><br />
+                            <a class="dropdown-item" href="week3-2.html">Week 3-2</a><br />
+                            <a class="dropdown-item" href="week3-3.html">Week 3-3</a><br />
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 4
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week4-1.html">Week 4-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 5
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week5-1.html">Week 5-1</a><br />
+                            <a class="dropdown-item" href="week5-2.html">Week 5-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 6
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week6-1.html">Week 6-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 7
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week7-1.html">Week 7-1</a><br />
+                            <a class="dropdown-item" href="week7-2.html">Week 7-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 8
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week8-1.html">Week 8-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <form id="loginForm" class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input id="txtUsername" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="txtPassword" type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button id="btnLogin" onclick="login" class="btn btn-success">Sign in</button>
+                        </form>
+                    </div>
+                </div><!--end of navbar-->
+                <div id="navbar" class="navbar-collapse collapse">
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Resale City<sup>&copy;</sup></h1>
+            <p class="subtitle">Half of all profits donated to benefit our local community.</p>
+        </div><!--Heading section-->
+    </div>
+    <div class="container">
+        <h3>Craftsman Lawn Tractor</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iRGmO9vtWko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table>
+            <colgroup>
+                <col class="itemCol" />
+                <col class="itemCol" />
+                <col class="itemCol" />
+            </colgroup>
+            <tr>
+                <td class="advertise">Just Arrived!!! Craftsman 46 in. W 725 cc Lawn Tractor Riding.  Model Number 27065.</td>
+                <td class="advertise">This Craftsman Pro Series garden tractor is perfect for large lawns and heavy-duty hauling.</td>
+                <td class="advertise">Stay on top of weekly maintenance with the tap of the Craftsman Smart Lawn app on your smartphone.</td>
+            </tr>
+        </table><br />
+        <div class="section">
+            <a href="images/product2.jpg" target="_blank"><img src="images/product2.jpg" style="width: 100%;height: 100%" /></a>
+        </div>
+        <div class="section">
+            <h3>Description</h3>
+            <p>
+                With 12 different cutting height positions and Consistent-Cut™ technology, you'll be able to power through any yard, even yards with uneven terrain and tall grass.
+                Track run time, order replacements, get service notifications and watch troubleshooting videos. It's never been easier to care for your lawn and your mower.
+                Ideal for medium and large lawns with any type of terrain.
+            </p>
+            <div>
+                <p>
+                    Craftsman Smart Lawn connects your tractor to your smart phone via Bluetooth and gives you maintenance information.
+                    Garden tractors are designed for heavier yard work.
+                    Powered by a 26 HP 747cc Kohler 7000 Elite V-Twin engine to handle the tough jobs.
+                </p>
+            </div>
+            <p>
+                Foot pedal hydrostatic transmission gives you a smooth ride without having to shift gears.
+                Consistent-Cut™ technology changes the engine power for an even, precise cut every time.
+                The platinum spark plug starts up the engine with ease.
+                A 50" wide deck cuts a large path of grass in a single pass to finish in less time.
+                Spring-assisted lift system features a total of 12 different cutting height positions.
+                A deck wash system connects to your hose to clean out debris underneath.
+                3-in-1 deck design lets you bag, mulch or discharge your clippings.
+                Runs up to 5.5 MPH to get through bigger yards faster!
+            </p>
+        </div>
+        <div class="section">
+            <a href="images/mower1.jpg" target="_blank"><img src="images/mower1.jpg" style="width: 100%;height: 100%" /></a>
+        </div>
+        <div class="section">
+            <a href="images/mower2.jpg" target="_blank"><img src="images/mower2.jpg" style="width: 100%;height: 100%" /></a>
+        </div>
+    </div>
+    <div class="container">
+        <button onclick="doStuff()"><h3>CHANGE!</h3></button>
+    </div>
+    <hr />
+    <footer class="footer">
+        &copy; 2018 Daniel Khateeb. All Rights Reserved. Accessed on
+        <script>document.write(new Date().toDateString());</script>.
+    </footer>
+</body><!--end body-->
+</html><!--end html-->

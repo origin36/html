@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/week2-2favicon.ico">
+    <title>RC-Home</title>
+    <style>
+        h1 { /*embedded style for h1 element*/
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Copperplate Gothic';
+            margin: 15px 25px;
+            color: #0026ff
+        }
+
+        a { /*embedded style for a element*/
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            font-family: 'Copperplate Gothic';
+        }
+
+        hr { /*embedded style for hr element*/
+            border: none;
+            height: 4px;
+            background-color: #000000;
+        }
+
+        .largeWidth { /*class style for largeWidth*/
+            width: 600px;
+        }
+
+        .smallWidth { /*class style for smallWidth*/
+            width: 390px;
+        }
+
+        .smallBox { /*class style for smallBox*/
+            display: inline-block;
+            border: solid;
+            border-color: #000000;
+            padding: 8px 8px;
+            margin: 8px 8px;
+            vertical-align: middle;
+            width: 250px;
+        }
+
+        .largeBox { /*class style for largeBox*/
+            border: dotted;
+            border-color: #0026ff;
+            border-radius: 20px;
+            margin: 8px 490px;
+            padding: 10px 10px;
+        }
+
+        #rcPara { /*created a span id named rcPara*/
+            font-family: 'Copperplate Gothic';
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #spanOne { /*created a span id named spanOne*/
+            background-color: #00ff21; /*setse background color to green*/
+            color: #000000; /*sets text color to black*/
+        }
+    </style>
+</head>
+<body background="images/rockPattern.png"><!--used image for background-->
+    <header style="font-family:Papyrus;font-size:62px;font-weight:bolder;text-align:center">RESALE CITY&nbsp;<sup>&copy</sup></header><!--inline style for header-->
+    <div class="largeBox" align="center"><!--use of largeBox class centered-->
+        <div class="smallBox"><!--use of smallBox class-->
+            <h1>Who We Are</h1><!--h1 use-->
+            <p id="rcPara"><!--span id rcPara used-->
+                We were founded by chance during the summer of 2018.  Bill Johnson, the
+                owner and CEO, developed an addiction purchasing items at garage
+                sales.  Being faced with the choice of getting rid of these items or <del>find
+                happiness</del> face a divorce, he chose the former and began selling items to friends.  This
+                quickly blossomed into a full fledged thrift store.<br /><br /><br />
+            </p><!--end paragraph-->
+        </div><!--end division-->
+        <div class="smallBox"><!--use of smallBox class-->
+            <h1>Community Support</h1><!--h1 use-->
+            <p id="rcPara"><!--span id rcPara used-->
+                Bill believes in community.  Therefore, <span id="spanOne">50 percent of ALL proceeds are placed<!--span tag used-->
+                back into the local community.</span>  This has taken the form of donations to combat hunger,
+                purchase of school supplies for needy children, and purchase of books donated to
+                the local library.<br /><br /><code>A purchase from us is an investment in your community!</code><!--code tag used-->
+            </p><!--end paragraph-->
+        </div><!--end division-->
+        <div class="smallBox"><!--use of smallBox class-->
+            <h1>Our Products</h1><!--h1 use-->
+            <p id="rcPara"><!--span id rcPara used-->
+                In addition to the routine items offered, there is a current promotion.  We have
+                obtained a large supply of <mark>Space Pens</mark> donated to us by the Space Pen Company.  On sale<!--mark tag used-->
+                now for the low price of <mark>$4.25</mark>!!! Get yours before supplies run out!<br /><br /><br />
+                <a href="https://www.spacepen.com/" accesskey="a">Description</a><br /><br /><br /><!--link to description-->
+                <a href="week1-2.html" accesskey="s">Order Form</a><br /><br /><!--link to order form-->
+            </p><!--end paragraph-->
+        </div><!--end division-->
+    </div><!--end major division of page-->
+    <footer align="center">&nbsp;&copy; All Rights Reserved. Accessed on
+    <script>document.write(new Date().toDateString());</script>.</footer><!--footer with date stamp-->
+</body><!--end body-->
+</html><!--end html document-->

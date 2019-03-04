@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Daniel Wight">
+    <meta name="description" content="week2-2.html assignment">
+    <link rel="icon" href="images/week2-2favicon.ico">
+
+    <title>Resale City</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/homework.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="relocate_home()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="dropdown">
+                        <button id="homeButton" onclick="location.href='home.html'">Home</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week1-1.html">Week 1-1</a><br />
+                            <a class="dropdown-item" href="week1-2.html">Week 1-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 2
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week2-1.html">Week 2-1</a><br />
+                            <a class="dropdown-item" href="week2-2.html">Week 2-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 3
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week3-1.html">Week 3-1</a><br />
+                            <a class="dropdown-item" href="week3-2.html">Week 3-2</a><br />
+                            <a class="dropdown-item" href="week3-3.html">Week 3-3</a><br />
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 4
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week4-1.html">Week 4-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 5
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week5-1.html">Week 5-1</a><br />
+                            <a class="dropdown-item" href="week5-2.html">Week 5-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 6
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week6-1.html">Week 6-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 7
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week7-1.html">Week 7-1</a><br />
+                            <a class="dropdown-item" href="week7-2.html">Week 7-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 8
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week8-1.html">Week 8-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <form id="loginForm" class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input id="txtUsername" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="txtPassword" type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button id="btnLogin" onclick="login" class="btn btn-success">Sign in</button>
+                        </form>
+                    </div>
+                </div><!--end of navbar-->
+                <div id="navbar" class="navbar-collapse collapse">
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>United States Map</h1>
+        </div><!--Heading section-->
+    </div>
+    <!-- Start of Image Map -->
+    <div class="usaMap">
+        <h1 id="state"></h1>
+        <IMG SRC="images/mapusa.gif" USEMAP="#USAMAPWHITE" WIDTH=598 HEIGHT=364 BORDER=0>
+        <MAP NAME="USAMAPWHITE">
+            <AREA SHAPE=POLY COORDS="230,35,294,38,299,57,299,79,228,79" HREF="week3-2.html?page=n.Dakota.html&dem=0&rep=3" ALT="N. Dakota">
+            <AREA SHAPE=POLY COORDS="227,80,299,80,302,120,282,116,226,116" HREF="week3-2.html?page=s.Dakota.html&dem=0&rep=3" ALT="S. Dakota">
+            <AREA SHAPE=POLY COORDS="229,35,226,87,154,81,145,86,131,69,123,21" HREF="week3-2.html?page=montana.html&dem=0&rep=3" ALT="Montana">
+            <AREA SHAPE=POLY COORDS="224,89,223,143,148,136,156,83" HREF="week3-2.html?page=wyoming.html&dem=0&rep=3" ALT="Wyoming">
+            <AREA SHAPE=POLY COORDS="169,141,241,147,241,197,162,191" HREF="week3-2.html?page=colorado.html&dem=9&rep=0" ALT="Colorado">
+            <AREA SHAPE=POLY COORDS="112,20,121,20,132,87,152,87,149,119,94,111" HREF="week3-2.html?page=idaho.html&dem=0&rep=4" ALT="Idaho">
+            <AREA SHAPE=POLY COORDS="42,10,66,7,111,18,104,57,48,51,40,36" HREF="week3-2.html?page=washington.html&dem=12&rep=0" ALT="Washington">
+            <AREA SHAPE=POLY COORDS="40,42,47,54,104,60,92,111,18,94" HREF="week3-2.html?page=oregon.html&dem=7&rep=0" ALT="Oregon">
+            <AREA SHAPE=POLY COORDS="57,106,120,118,101,206,49,147" HREF="week3-2.html?page=nevada.html&dem=6&rep=0" ALT="Nevada">
+            <AREA SHAPE=POLY COORDS="122,118,149,122,146,138,167,141,159,191,110,183" HREF="week3-2.html?page=utah.html&dem=0&rep=6" ALT="Utah">
+            <AREA SHAPE=POLY COORDS="16,96,55,104,46,145,98,209,96,239,71,239,24,185" HREF="week3-2.html?page=california.html&dem=55&rep=0" ALT="California">
+            <AREA SHAPE=POLY COORDS="109,185,159,193,151,271,138,269,101,247,103,208" HREF="week3-2.html?page=arizona.html" ALT="Arizona">
+            <AREA SHAPE=POLY COORDS="226,117,301,122,315,159,244,160,243,145,225,142" HREF="week3-2.html?page=nebraska.html" ALT="Nebraska">
+            <AREA SHAPE=POLY COORDS="243,162,318,162,325,172,325,196,244,196" HREF="week3-2.html?page=kansas.html" ALT="Kansas">
+            <AREA SHAPE=POLY COORDS="231,198,324,199,328,249,265,233,264,204,233,203" HREF="week3-2.html?page=oklahoma.html" ALT="Oklahoma">
+            <AREA SHAPE=POLY COORDS="162,193,229,199,226,269,164,267,160,271,152,270" HREF="week3-2.html?page=newMexico.html" ALT="New Mexico">
+            <AREA SHAPE=POLY COORDS="230,204,262,205,264,236,332,253,338,300,275,355,224,308" HREF="week3-2.html?page=texas.html" ALT="Texas">
+            <AREA SHAPE=POLY COORDS="293,38,317,35,359,49,341,70,337,94,352,107,302,111" HREF="week3-2.html?page=minnesota.html" ALT="Minnesota">
+            <AREA SHAPE=POLY COORDS="342,68,358,66,395,87,390,118,364,122,352,102,339,93" HREF="week3-2.html?page=wisconsin.html" ALT="Wisconsin">
+            <AREA SHAPE=POLY COORDS="303,114,352,109,365,129,353,151,316,156" HREF="week3-2.html?page=iowa.html" ALT="Iowa">
+            <AREA SHAPE=POLY COORDS="316,158,353,154,382,196,378,207,373,202,329,206,327,171" HREF="week3-2.html?page=missouri.html" ALT="Missouri">
+            <AREA SHAPE=POLY COORDS="327,209,370,205,376,211,374,223,363,255,336,256,331,248" HREF="week3-2.html?page=arkansas.html" ALT="Arkansas">
+            <AREA SHAPE=POLY COORDS="335,259,363,258,362,282,383,282,392,306,337,300,342,283" HREF="week3-2.html?page=louisiana.html" ALT="Louisiana">
+            <AREA SHAPE=POLY COORDS="365,124,389,120,393,133,398,172,393,185,382,193,355,155" HREF="week3-2.html?page=illinois.html" ALT="Illinois">
+            <AREA SHAPE=POLY COORDS="359,68,379,58,423,64,454,116,398,131,394,85" href="week3-2.html?page=michigan.html" ALT="Michigan">
+            <AREA SHAPE=POLY COORDS="396,133,427,127,431,166,405,185,391,191,402,172" HREF="week3-2.html?page=indiana.html" ALT="Indiana">
+            <AREA SHAPE=POLY COORDS="386,193,409,186,435,163,456,167,463,178,450,190,386,201" HREF="week3-2.html?page=kentucky.html" ALT="Kentucky">
+            <AREA SHAPE=POLY COORDS="383,203,468,190,466,196,445,211,376,224" HREF="week3-2.html?page=tennessee.html" ALT="Tennessee">
+            <AREA SHAPE=POLY COORDS="374,227,401,222,403,284,387,288,384,280,362,282,369,263" HREF="week3-2.html?page=mississippi.html" ALT="Mississippi">
+            <AREA SHAPE=POLY COORDS="402,221,432,217,444,254,442,273,412,275,414,283,406,283" HREF="week3-2.html?page=alabama.html" ALT="Alabama">
+            <AREA SHAPE=POLY COORDS="427,127,468,117,472,147,457,165,433,160" HREF="week3-2.html?page=ohio.html" ALT="Ohio">
+            <AREA SHAPE=POLY COORDS="473,148,485,147,487,154,506,145,483,173,469,179,458,168" HREF="week3-2.html?page=w.virginia.html" ALT="W. Virginia">
+            <AREA SHAPE=POLY COORDS="484,174,502,147,528,160,533,174,453,191,464,180,483,176" HREF="week3-2.html?page=virginia.html" ALT="Virginia">
+            <AREA SHAPE=POLY COORDS="470,189,534,176,542,188,513,218,496,206,480,206,449,212" HREF="week3-2.html?page=n.carolina.html" ALT="N. Carolina">
+            <AREA SHAPE=POLY COORDS="460,211,494,208,510,218,488,250,460,218" HREF="week3-2.html?page=s.carolina.html" ALT="S. Carolina">
+            <AREA SHAPE=POLY COORDS="433,217,457,214,487,252,483,269,477,273,445,274,445,254" HREF="week3-2.html?page=georgia.html" ALT="Georgia">
+            <AREA SHAPE=POLY COORDS="412,277,483,272,513,322,505,342,476,307,460,283,420,285" HREF="week3-2.html?page=florida.html" ALT="Florida">
+            <AREA SHAPE=POLY COORDS="555,19,573,12,588,46,563,69,556,47" HREF="week3-2.html?page=maine.html" ALT="Maine">
+            <AREA SHAPE=POLY COORDS="549,50,556,48,563,69,565,83,552,85" HREF="week3-2.html?page=newHampshire.html" ALT="New Hampshire">
+            <AREA SHAPE=POLY COORDS="537,59,549,55,549,84,545,85,541,75" HREF="week3-2.html?page=vermont.html" ALT="Vermont">
+            <AREA SHAPE=POLY COORDS="474,106,534,57,546,107,544,112,531,109,528,102,478,112" HREF="week3-2.html?page=newYork.html" ALT="New York">
+            <AREA SHAPE=POLY COORDS="469,116,474,109,478,115,527,105,533,125,526,134,477,146" HREF="week3-2.html?page=pennsylvania.html" ALT="Pennsylvania">
+            <AREA SHAPE=POLY COORDS="544,87,565,85,576,85,576,94,566,91,547,96" HREF="week3-2.html?page=massachusetts.html" ALT="Massachusetts">
+            <AREA SHAPE=POLY COORDS="560,94,565,92,569,96,563,100" HREF="week3-2.html?page=rhodeIsland.html" ALT="Rhode Island">
+            <AREA SHAPE=POLY COORDS="546,97,560,94,562,101,548,105" HREF="week3-2.html?page=connecticut.html" ALT="Connecticut">
+            <AREA SHAPE=POLY COORDS="532,111,545,113,544,120,542,142,529,135,535,124,530,117" HREF="week3-2.html?page=newJersey.html" ALT="New Jersey">
+            <AREA SHAPE=POLY COORDS="531,139,540,153,534,153" HREF="week3-2.html?page=delaware.html" ALT="Delaware">
+            <AREA SHAPE=POLY COORDS="486,146,529,136,536,155,536,161,515,156,511,144" HREF="week3-2.html?page=maryland.html" ALT="Maryland">
+        </MAP>
+    </div>
+    <!-- End of Image Map -->
+    <!--iframe inserted here-->
+    <iframe width="900" height="400" sandbox="allow-scripts" seamless src="https://www.park.edu"></iframe>
+    <footer>
+        <p>&copy; 2018 Resale City. All Rights Reserved.</p>
+    </footer>
+    <script>
+        var myQS = window.location.search.substring(1);
+        var myState = myQS.replace("page=", "");
+        var myState = myState.replace(".html", "");
+        var myState = myState.replace(new RegExp(/&/gi), " ");
+        var newState = myState.toUpperCase();
+        document.getElementById("state").style.marginLeft = "150px";
+        document.getElementById("state").style.fontWeight = "bolder";
+        document.getElementById("state").style.color = "#ffffff";
+        document.getElementById("state").innerHTML = newState;
+    </script>
+</body><!--end body-->
+</html><!--end html-->

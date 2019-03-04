@@ -1,0 +1,138 @@
+﻿/*Daniel Wight 10/22/2018 week2-1.css*/
+/*note: colors given in instructions looked awful, so many of them were changed*/
+.content { /*content display*/
+    font-size: 10px;
+    color: #CC9900;
+}
+.body { /*body display*/
+    margin: 0px auto;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #042841;
+}
+.p { /*paragraph display*/
+    color: #ffffff;
+    margin-left: 50px;
+    width: 600px;
+}
+.header { /*header display*/
+    width: 960px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px auto;
+    background-color: #D8E6B3;
+    background-image: url("week2-1banner.png");
+    background-size: 960px 100px;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+.h1 { /*heading 1 display*/
+    color: #ffffff;
+    margin-left: 30px;
+}
+.h2 { /*heading 2 display*/
+    text-align: center;
+    padding-right: 225px;
+    color: #ffffff;
+    font-family: Papyrus;
+    text-shadow: 2px 1px #042841;
+    width: 600px;
+    text-decoration: underline;
+}
+.h3 { /*heading 3 display*/
+    color: #ff0000;
+    margin-left: 30px;
+}
+.logo { /*logo display*/
+    float: left;
+    width: 180px;
+    height: 100px;
+}
+.topMenu { /*topMenu display*/
+    padding-right: 40px;
+    text-align: right;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 9px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.topMenu a { /*link in topMenu display*/
+    margin-left: 30px;
+    font-size: 20px;
+}
+.topMenu a:default { /*default link color in topMenu*/
+    color: #ffffff;
+}
+.topMenu a:visited { /*visited link color in topMenu*/
+    color: #4cff00;
+}
+.topMenu a:hover { /*hovered link color in topMenu*/
+    color: #0026ff;
+}
+.leftAside { /*leftAside display*/
+    width: 180px;
+    margin: 0px auto;
+    vertical-align: top;
+    padding: 0px;
+    display: table-cell; 
+}
+.aside p { /*paragraph inside aside display*/
+    padding: 0;
+    text-align: center;
+    padding-left: 5px;
+}
+.aside ul { /*unordered list inside aside display*/
+    margin: 0px;
+    padding: 10px 20px;
+    background-color: #1A5476;
+    list-style: none;
+    text-decoration:none;
+}
+.aside a:default { /*default link display inside aside*/
+    font-family: Verdana, Geneva, sans-serif;
+    text-decoration:none;
+    color: #ffffff;
+}
+.aside a:visited { /*visited link display inside aside*/
+    font-family: Verdana, Geneva, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+.aside a:hover { /*hovered link display inside aside*/
+    color: #CC9900;
+}
+.content { /*content display*/
+    width: 780px;
+    padding: 0px 10px;
+    vertical-align: top;
+    display: table-cell;
+}
+.content h2 { /*h2 display inside content*/
+    color: #042841;
+}
+.content a:default { /*default link display inside content*/
+    text-decoration: none;
+    color: #ffffff;
+}
+.content a:visited { /*visited link display inside content*/
+    text-decoration: none;
+    color: #141919;
+}
+.content a:hover { /*hover link inside content*/
+    color: #4cff00;
+}
+.main { /*main display*/
+    width: 960px;
+    height: 960px;
+    padding: 10px, 0px;
+    margin: 0px, auto;
+    text-align: center;
+    background-color: #508D8D;
+    color: #D8E6B3;
+    clear: both;
+}
+.footer a { /*footer display*/
+    color: #4cff00;
+    text-decoration: none;
+}

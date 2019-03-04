@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en"><!--html version 5 with the language set to english-->
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/week2-2favicon.ico">
+    <title>RC-Order</title><!--name of the webpage that appears in the top tab-->
+    <script>
+        function calculateTotal() { /*function to display shipping information based on data from form and fixed values of cost, tax, and shipping*/
+            var cusName = document.getElementById("name").value; /*retrieve customer name typed into form and sets it var a*/
+            var delDate = document.getElementById("date").value; /*retrieve date customer requested delivery and sets it to var b*/
+            var numItems = document.getElementById("quantity").value; /*retrieve quantity customer ordered and sets it to var c*/
+
+            var myData = { /*object myData created*/
+                cusName: cusName,
+                delDate: delDate,
+                numItems: numItems,
+                subTotal: numItems * 4.25,
+
+                /*getters*/
+                get taxCost() {
+                    return this.subTotal * 0.07;
+                },
+                get shippingCost() {
+                    return this.subTotal * 0.02;
+                },
+                get totalCost() {
+                    return this.subTotal + this.taxCost + this.shippingCost;
+                },
+
+                /*setters*/
+                set taxCost(taxCost) {
+                    this.taxCost = taxCost;
+                },
+                set shippingCost(shippingCost) {
+                    this.shippingCost = shippingCost;
+                },
+                set totalCost(totalCost) {
+                    this.totalCost = totalCost;
+                },
+                printMessages: function () {
+                    document.write("Thank you " + this.cusName + " for your order.<br>");
+                    document.write("You will receive " + this.numItems + " items delivered to you on " + this.delDate + ".<br>");
+                    document.write("The price of your items is $" + this.subTotal.toFixed(2) + ".<br>");
+                    document.write("The tax charge is $" + this.taxCost.toFixed(2) + "<br>");
+                    document.write("The shipping charge is $" + this.shippingCost.toFixed(2) + ".<br>");
+                    document.write("Your total is $" + this.totalCost.toFixed(2) + ".<br>");
+                } /*end printMessages function*/
+            } /*end object myData*/
+
+            myData.printMessages(); /*calls function printMessages from myData*/
+        } /*end function calculateTotal*/
+    </script><!--end script-->
+    <style>
+        h1 { /*embedded style for h1 element*/
+            font-family: 'Copperplate Gothic'; /*font set to Ink Free*/
+            font-size: 30px; /*font size set to 52 pixels*/
+            color: #00ffff; /*text color set to cyan*/
+            display: inline;
+        }
+
+        .outer { /*embedded style for .outer class*/
+            margin: 25px 35px 25px 35px;
+            padding: 10px 10px 10px 10px;
+            max-width: 600px;
+            border-width: 25px;
+            text-align: center;
+            background-color: #000000;
+            border-radius: 15px;
+        }
+
+        .inner { /*embedded style for .inner class*/
+            border: solid;
+            border-color: #000000;
+            border-width: 5px;
+            margin: 15px 15px 15px 15px;
+            vertical-align: middle;
+            padding: 10px 10px;
+            border-radius: 100px;
+            background-color: #ff0000;
+        }
+
+        form { /*embedded style for form element*/
+            text-align: center;
+        }
+        button { /*embedded style for button*/
+            background-color: #000000; /*background color set to black*/
+            border-color: #000000;
+            color: #0026ff; /*text color set to green*/
+            padding: 10px 50px; /*horizontal padding set to 40 pixels, vertical to 150 pixels*/
+            margin: 4px 4px;
+            text-align: center; /*text centered*/
+            font-size: 22px; /*font size set to 32 pixels*/
+            font-family: 'Copperplate Gothic';
+            font-weight: bolder;
+        }
+
+        button:hover { /*embedded style for when mouse hovers over button*/
+            background-color: #0026ff; /*background color set to blue*/
+            border-color: #000000; /*border color set to black*/
+            color: #000000; /*text color set to yellow*/
+            font-weight: bolder;
+            cursor: grab; /*curset changes to grab hand*/
+            border-radius: 100px;
+        }
+        .smallWidth { /*embedded class .smallWidth*/
+            width: 700px;
+            text-align: center;
+        }
+
+        input {
+            vertical-align: middle;
+        }
+
+        textarea {
+            text-align: center;
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            font-family: 'Copperplate Gothic';
+        }
+
+        .inputWidth {
+            width: 130px;
+        }
+    </style><!--end of style tag-->
+</head><!--end of head tag-->
+<body background="images/rockPattern.png"><!--used image for background-->
+    <header style="font-family:Papyrus;font-size:62px;font-weight:bolder;text-align:center">RESALE CITY&nbsp;<sup>&copy</sup></header><!--header with inline style-->
+    <div align="center">
+        <!--center all children-->
+        <hr class="smallWidth" />
+        <div class="outer">
+            <!--calls class outer for use-->
+            <form>
+                <div class="inner">
+                    <!--calls class inner for use-->
+                    <h1><label>Customer Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="inputWidth" type="text" id="name" tabindex="1" autofocus/></label></h1><br />
+                </div><!--input box for name that accepts any string-->
+                <div class="inner">
+                    <h1><label>Delivery Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="inputWidth" type="date" id="date" tabindex="2" /></label></h1><br />
+                </div><!--input box for date that only accepts dates-->
+                <div class="inner">
+                    <h1><label>Number of Items&nbsp;&nbsp;<input class="inputWidth" type="number" id="quantity" tabindex="3" /></label></h1><br />
+                </div><!--input box for quantity that only accepts integers-->
+                <button type="button" onclick="calculateTotal()" ; return false>SUBMIT ORDER</button><!--button that calls function but does not submit form-->
+            </form><!--end form-->
+        </div><!--end of class outer use-->
+        <hr class="smallWidth" /><br /><br />
+        <textarea rows="3" cols="120">written homework instructions specified adding a textarea but included no additional instructions</textarea><br /><br /><!--textarea tag used-->
+        <a href="week1-1.html" accesskey="a" tabindex="4">Go Back</a><br /><br /><!--link go go back to week1-1.html-->
+        <footer>
+            &nbsp;&copy; All Rights Reserved. Accessed on
+            <script>document.write(new Date().toDateString());</script>.
+        </footer><!--footer with date stamp-->
+    </div><!--end major divison of page-->
+</body><!--end body-->
+</html><!--end html document-->

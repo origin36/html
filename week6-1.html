@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Daniel Wight">
+    <meta name="description" content="week2-2.html assignment">
+    <link rel="icon" href="images/week2-2favicon.ico">
+
+    <title>Resale City</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homework.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--custom javascript for home-->
+    <script src="js/week6-1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="relocate_home()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="dropdown">
+                        <button id="homeButton" onclick="location.href='home.html'">Home</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week1-1.html">Week 1-1</a><br />
+                            <a class="dropdown-item" href="week1-2.html">Week 1-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 2
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week2-1.html">Week 2-1</a><br />
+                            <a class="dropdown-item" href="week2-2.html">Week 2-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 3
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week3-1.html">Week 3-1</a><br />
+                            <a class="dropdown-item" href="week3-2.html">Week 3-2</a><br />
+                            <a class="dropdown-item" href="week3-3.html">Week 3-3</a><br />
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 4
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week4-1.html">Week 4-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 5
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week5-1.html">Week 5-1</a><br />
+                            <a class="dropdown-item" href="week5-2.html">Week 5-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 6
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week6-1.html">Week 6-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 7
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week7-1.html">Week 7-1</a><br />
+                            <a class="dropdown-item" href="week7-2.html">Week 7-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 8
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week8-1.html">Week 8-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <form id="loginForm" class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input id="txtUsername" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="txtPassword" type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button id="btnLogin" onclick="login" class="btn btn-success">Sign in</button>
+                        </form>
+                    </div>
+                </div><!--end of navbar-->
+                <div id="navbar" class="navbar-collapse collapse">
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <br />
+            <h1 id="title">Resale City&copy;</h1><br />
+            <h2>Fifty Percent of Profits Donated to Community Charities.</h2>
+        </div><!--Heading section-->
+    </div>
+    <div class="main">
+        <div class="leftAside">
+            <h4>Create Invitation</h4>
+            <form id="invOptions">
+                <label for="eTitle">Event Title</label><br /><input type="text" id="eTitle" autofocus required /><br />
+                <label for="eDate">Event Date</label><br /><input type="date" id="eDate" required /><br />
+                <label for="eMsg">Custom Message<br /><textarea rows="4" cols="25" id="eMsg" required></textarea></label><br />
+                <label for="backColor">Background Color&nbsp;&nbsp;<input type="color" id="backColor" required /></label><br />
+                <label for="textColor">Text Color&nbsp;&nbsp;<input type="color" id="textColor" required /></label><br />
+                <label for="font">Font&nbsp;&nbsp;</label>
+                <select id="font" name="font" required>
+                    <!--font styles populated here-->
+                </select><br />
+                <label for="borderStyle">Border&nbsp;&nbsp;</label>
+                <select id="borderStyle" name="borderStyle" required>
+                    <!--border styles populated here-->
+                </select><br />
+                <label for="borderColor">Border Color&nbsp;&nbsp;<input type="color" id="borderColor" required /></label><br />
+                <label for="borderWidth">Border Width [0 to 12 pixels]</label>
+                <input type="range" list="tickmarks" id="borderWidth" min="0" max="12" />
+                <datalist id="tickmarks">
+                    <!--datalist options populated here-->
+                </datalist>
+                <p id="w6img">
+                    <label for="imageSel" id="imageSel">Choose Picture<br /></label>
+                    <!--images populate here-->
+                </p>
+                <button type="button" onclick="createInv()">Create Invitation</button>
+            </form>
+        </div>
+        <div id="invitationMain">
+            <h4 style="color: #000000">Your Custom Invitation</h4>
+            <div id="invitation"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy;2018 Daniel Khateeb. All Rights Reserved. Accessed on
+        <script>document.write(new Date().toDateString());</script>.
+    </footer>
+</body><!--end body-->
+</html><!--end html-->

@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Daniel Wight">
+    <meta name="description" content="week2-2.html assignment">
+    <link rel="icon" href="images/week2-2favicon.ico">
+
+    <title>Resale City</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homework.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--custom javascript for home-->
+    <script src="js/week5-2.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="relocate_home()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="dropdown">
+                        <button id="homeButton" onclick="location.href='home.html'">Home</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week1-1.html">Week 1-1</a><br />
+                            <a class="dropdown-item" href="week1-2.html">Week 1-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 2
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week2-1.html">Week 2-1</a><br />
+                            <a class="dropdown-item" href="week2-2.html">Week 2-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 3
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week3-1.html">Week 3-1</a><br />
+                            <a class="dropdown-item" href="week3-2.html">Week 3-2</a><br />
+                            <a class="dropdown-item" href="week3-3.html">Week 3-3</a><br />
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 4
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week4-1.html">Week 4-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 5
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week5-1.html">Week 5-1</a><br />
+                            <a class="dropdown-item" href="week5-2.html">Week 5-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 6
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week6-1.html">Week 6-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 7
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week7-1.html">Week 7-1</a><br />
+                            <a class="dropdown-item" href="week7-2.html">Week 7-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 8
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week8-1.html">Week 8-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <form id="loginForm" class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input id="txtUsername" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="txtPassword" type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button id="btnLogin" onclick="login" class="btn btn-success">Sign in</button>
+                        </form>
+                    </div>
+                </div><!--end of navbar-->
+                <div id="navbar" class="navbar-collapse collapse">
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <br />
+            <h1 id="title">Resale City&copy;</h1><br />
+            <h2>Fifty Percent of Profits Donated to Community Charities.</h2>
+        </div><!--Heading section-->
+    </div>
+    <div id="week5-2">
+        <table id="productTable">
+            <colgroup>
+                <col style="width: 90px" />
+                <col style="width: 90px" />
+                <col style="width: 250px" />
+                <col style="width: 200px" />
+                <col style="width: 90px" />
+                <col style="width: 300px" />
+                <col style="width: 200px" />
+                <col style="width: 100px" />
+                <col style="width: 100px" />
+            </colgroup>
+            <thead></thead>
+            <tbody id="productBody">
+                <tr id="row1000" class="prodrow">
+                    <td>
+                        <img class="week5img" src="images/greenButton.png" alt="Green Button">
+                    </td>
+                    <td>
+                        <img class="week5img" src="images/heart.png" alt="Heart">
+                    </td>
+                    <td>Bumper Stickers</td>
+                    <td>CafePress 10" x 3" Sticker</td>
+                    <td>Used</td>
+                    <td>Freshly peeled bumper stickers from the bumpers of junkyard cars.</td>
+                    <td><p class="retailPrice">$4.95</p></td>
+                    <td>$0.95</td>
+                    <td><a href="images/product1.jpg" target="_blank"><img src="images/product1sm.jpg" class="thumbnail" /> </a> </td>
+                </tr>
+                <tr id="row1000" class="prodrow">
+                    <td>
+                        <img class="week5img" src="images/greenButton.png" alt="Green Button">
+                    </td>
+                    <td>
+                        <img class="week5img" src="images/heart.png" alt="Heart">
+                    </td>
+                    <td>Lawn Tractors</td>
+                    <td>Craftsman 27042</td>
+                    <td>New</td>
+                    <td>Just in!  Grey Craftsman Lawn Tractor/Lawn Mower</td>
+                    <td><p class="retailPrice">$1999.99</p></td>
+                    <td>$1999.98</td>
+                    <td><a href="images/product2.jpg" target="_blank" /><img src="images/product2sm.jpg" class="thumbnail" /></a></td>
+                </tr>
+                <tr id="row1000" class="prodrow">
+                    <td>
+                        <img class="week5img" src="images/greenButton.png" alt="Green Button">
+                    </td>
+                    <td>
+                        <img class="week5img" src="images/heart.png" alt="Heart">
+                    </td>
+                    <td>Pans</td>
+                    <td>GNT Series Pure Solid Silver Frying Pan 24cm by Soy Türkiye</td>
+                    <td>New</td>
+                    <td>These pure silver pans are top of the line.  Custom made.  Allow 12 weeks for delivery.</td>
+                    <td><p class="retailPrice">$3500.00</p></td>
+                    <td>$3500.00</td>
+                    <td><a href="images/product3.jpg" target="_blank" /><img src="images/product3sm.jpg" class="thumbnail" /></a></td>
+                </tr>
+                <tr id="row1000" class="prodrow">
+                    <td>
+                        <img class="week5img" src="images/greenButton.png" alt="Green Button">
+                    </td>
+                    <td>
+                        <img class="week5img" src="images/heart.png" alt="Heart">
+                    </td>
+                    <td>Laser Printer Cartridge</td>
+                    <td>Dell Computer 2FV35 Black Toner Cartridge 2150cdn/2150cn/2155cdn/2155cn Color Laser Printers</td>
+                    <td>Used</td>
+                    <td>Laser printer cartridges without ink.</td>
+                    <td><p class="retailPrice">$56.69</p></td>
+                    <td>$19.99</td>
+                    <td><a href="images/product4.jpg" target="_blank" /><img src="images/product4sm.jpg" class="thumbnail" /></a></td>
+                </tr>
+                <tr class="productFoot" id="prodFooterRow"></tr>
+                <!--<tr>
+                <td>Postage Stamps</td>
+                <td>USPS Forever Stamps</td>
+                <td>Used</td>
+                <td>Collectors edition United States Postal Service Forever Stamps, used.</td>
+                <td>$0.49</td>
+                <td>$0.39</td>
+                <td><a href="images/product5.jpg" target="_blank" /><img src="images/product5sm.jpg" class="thumbnail" /></a></td>
+                </tr>-->
+            </tbody>
+        </table><br /><br />
+        <div class="container" style="background-color: #4800ff">
+            <h1>Add a Product!</h1>
+            <h2>
+                <label for="pname">Product Name&nbsp;&nbsp;</label><input type="text" id="pname" autofocus tabindex="2" /><br />
+                <label for="pmodel">Mfr/Make/Model Name&nbsp;&nbsp;<input type="text" id="pmodel" tabindex="3" /></label><br />
+                <label for="condition">Condition&nbsp;&nbsp;<input type="text" id="condition" tabindex="4" /></label><br />
+                <label for="description">Description&nbsp;&nbsp;<input type="text" id="description" tabindex="5" /></label><br />
+                <label for="retail">Retail Price&nbsp;&nbsp;<input type="text" id="retail" tabindex="6" /></label><br />
+                <label for="rcPrice">Resale City Price&nbsp;&nbsp;<input type="text" id="rcPrice" tabindex="7" /></label><br />
+                <label for="picture">Picture&nbsp;&nbsp;<input type="text" id="picture" tabindex="8" /></label><br />
+                <button id="week5-2button" onclick="addData()">ADD</button>
+            </h2>
+        </div>
+    </div><br /><br />
+    <footer class="footer">
+        &copy;2018 Daniel Khateeb. All Rights Reserved. Accessed on
+        <script>document.write(new Date().toDateString());</script>.
+    </footer>
+</body><!--end body-->
+</html><!--end html-->

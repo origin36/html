@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Daniel Wight">
+    <meta name="description" content="week2-2.html assignment">
+    <link rel="icon" href="images/week2-2favicon.ico">
+
+    <title>Resale City</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homework.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--my custom javascript for assignment 3-3-->
+    <script src="js/week3-3.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="relocate_home()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="dropdown">
+                        <button id="homeButton" onclick="location.href='home.html'">Home</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week1-1.html">Week 1-1</a><br />
+                            <a class="dropdown-item" href="week1-2.html">Week 1-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 2
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week2-1.html">Week 2-1</a><br />
+                            <a class="dropdown-item" href="week2-2.html">Week 2-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 3
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week3-1.html">Week 3-1</a><br />
+                            <a class="dropdown-item" href="week3-2.html">Week 3-2</a><br />
+                            <a class="dropdown-item" href="week3-3.html">Week 3-3</a><br />
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 4
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week4-1.html">Week 4-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 5
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week5-1.html">Week 5-1</a><br />
+                            <a class="dropdown-item" href="week5-2.html">Week 5-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 6
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week6-1.html">Week 6-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 7
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week7-1.html">Week 7-1</a><br />
+                            <a class="dropdown-item" href="week7-2.html">Week 7-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 8
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week8-1.html">Week 8-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <form id="loginForm" class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input id="txtUsername" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="txtPassword" type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button id="btnLogin" onclick="login" class="btn btn-success">Sign in</button>
+                        </form>
+                    </div>
+                </div><!--end of navbar-->
+                <div id="navbar" class="navbar-collapse collapse">
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Resale City<sup>&copy;</sup></h1>
+            <p id="subTitle">Half of all profits donated to benefit our local community.</p>
+        </div><!--Heading section-->
+    </div>
+    <form>
+        <fieldset>
+            <legend>Demographics</legend>
+            <h2>
+                <label for="firstName">First Name&nbsp;&nbsp;</label><input type="text" id="firstName" autofocus tabindex="2" required /><br />
+                <label for="lastName">Last Name&nbsp;&nbsp;<input type="text" id="lastName" tabindex="3" required /></label><br />
+                <label for="address">Address&nbsp;&nbsp;<input type="text" id="address" tabindex="4" required /></label><br />
+                <label for="city">City&nbsp;&nbsp;<input type="text" id="city" tabindex="5" required /></label><br />
+                <label for="state">State&nbsp;&nbsp;<input type="text" id="state" tabindex="6" required /></label><br />
+                <label for="zip">Zip Code&nbsp;&nbsp;<input type="text" id="zip" tabindex="7" required /></label><br />
+                <label for="country">Country&nbsp;&nbsp;<input type="text" id="country" tabindex="8" required /></label><br />
+                <label for="phone">Phone Number&nbsp;&nbsp;<input type="text" id="phone" tabindex="9" required /></label><br />
+                <label for="email">Email&nbsp;&nbsp;<input type="text" id="email" tabindex="10" required /></label><br />
+                <label for="password">Password&nbsp;&nbsp;<input type="text" id="password" tabindex="11" required /></label><br />
+                <label for="color">Favorite Color&nbsp;&nbsp;<input type="color" id="color" tabindex="12" required /></label><br />
+                <label for="birthday">Birthday&nbsp;&nbsp;<input type="date" id="birthday" tabindex="13" required /></label><br />
+                <label for="attended">Number of Rummage Sales Attended&nbsp;&nbsp;<input type="number" id="attended" min="0" max="100" tabindex="14" required /></label><br />
+            </h2>
+            <legend>Do you use Ebay to sell your items?</legend>
+            <div>
+                <h2>
+                    <input type="radio" id="yes" name="ebay" value="yes" checked tabindex="15" /><label for="yes">&nbsp;Yes</label>
+                    <input type="radio" id="no" name="ebay" value="no" tabindex="16" /><label for="no">&nbsp;No</label>
+                </h2>
+            </div>
+            <legend>What do you use to purchase your items most often?</legend>
+            <div>
+                <h2>
+                    <input type="radio" id="paypal" name="currency" value="palpal" checked tabindex="17" /><label for="paypal">&nbsp;PayPal</label>
+                    <input type="radio" id="creditCard" name="currency" value="creditCard" tabindex="18" /><label for="creditCard">&nbsp;Credit Card</label>
+                    <input type="radio" id="check" name="currency" value="check" tabindex="19" /><label for="check">&nbsp;Check</label>
+                    <input type="radio" id="cash" name="currency" value="cash" tabindex="20" /><label for="cash">&nbsp;Cash</label>
+                    <input type="radio" id="monopolyMoney" name="currency" value="monopolyMoney" tabindex="21" /><label for="monopolyMoney">&nbsp;Monopoly Money</label>
+                </h2>
+            </div>
+            <legend>Favorite Resale City Categories</legend>
+            <h2>
+                <input type="checkbox" id="dinnerware" name="category" value="dinnerware" tabindex="22">&nbsp;Dinnerware<br />
+                <input type="checkbox" id="clothing" name="category" value="clothing" tabindex="23">&nbsp;Clothing<br />
+                <input type="checkbox" id="office" name="category" value="office" tabindex="24">&nbsp;Office Supplies<br />
+                <input type="checkbox" id="electronics" name="category" value="electronics" tabindex="25">&nbsp;Electronics<br />
+                <input type="checkbox" id="antiques" name="category" value="antiques" tabindex="26">&nbsp;Antiques<br />
+            </h2>
+            <input type="hidden" id="mySecret" name="mySecret" value="101110101101">
+        </fieldset>
+        <button type="button" onclick="displayResults()">Submit Survey</button>
+    </form>
+    <div id="results"></div>
+    <footer>
+        <p>
+            &copy; 2018 Resale City. All Rights Reserved. Accessed on
+            <script>document.write(new Date().toDateString());</script>.
+        </p>
+    </footer>
+</body><!--end body-->
+</html><!--end html-->

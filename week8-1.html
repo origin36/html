@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Daniel Wight">
+    <meta name="description" content="week2-2.html assignment">
+    <link rel="icon" href="images/week2-2favicon.ico">
+
+    <title>Resale City</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homework.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--custom javascript for home-->
+    <script src="js/week8-1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="relocate_home()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="dropdown">
+                        <button id="homeButton" onclick="location.href='home.html'">Home</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week1-1.html">Week 1-1</a><br />
+                            <a class="dropdown-item" href="week1-2.html">Week 1-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 2
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week2-1.html">Week 2-1</a><br />
+                            <a class="dropdown-item" href="week2-2.html">Week 2-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 3
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week3-1.html">Week 3-1</a><br />
+                            <a class="dropdown-item" href="week3-2.html">Week 3-2</a><br />
+                            <a class="dropdown-item" href="week3-3.html">Week 3-3</a><br />
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 4
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week4-1.html">Week 4-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 5
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week5-1.html">Week 5-1</a><br />
+                            <a class="dropdown-item" href="week5-2.html">Week 5-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 6
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week6-1.html">Week 6-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 7
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week7-1.html">Week 7-1</a><br />
+                            <a class="dropdown-item" href="week7-2.html">Week 7-2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Week 8
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="week8-1.html">Week 8-1</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <form id="loginForm" class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input id="txtUsername" type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input id="txtPassword" type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button id="btnLogin" onclick="login" class="btn btn-success">Sign in</button>
+                        </form>
+                    </div>
+                </div><!--end of navbar-->
+                <div id="navbar" class="navbar-collapse collapse">
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <br />
+
+            <!--page heading-->
+            <h1 id="title">Resale City&copy;</h1><br />
+            <h2>Fifty Percent of Profits Donated to Community Charities.</h2>
+        </div>
+    </div>
+    
+    <!--main div for page content-->
+    <div class="container">
+        <h3>Resale City Presents: Puzzle City!</h3>
+        <h4>Drag the squares right in the correct order!</h4>
+        <hr />
+
+        <!--main div for puzzle-->
+        <div class="panel">
+
+            <!--first half of page containing puzzle pieces in the wrong order-->
+            <div class="halfPanel">
+                <div id="week8div9" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img8.jpg" draggable="true" ondragstart="drag(event)" id="drag7" style="width:100%;height:100%">
+                </div>
+                <div id="week8div10" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img3.jpg" draggable="true" ondragstart="drag(event)" id="drag2" style="width:100%;height:100%">
+                </div>
+                <div id="week8div11" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img9.jpg" draggable="true" ondragstart="drag(event)" id="drag8" style="width:100%;height:100%">
+                </div>
+                <div id="week8div12" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img6.jpg" draggable="true" ondragstart="drag(event)" id="drag5" style="width:100%;height:100%">
+                </div>
+                <div id="week8div13" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img2.jpg" draggable="true" ondragstart="drag(event)" id="drag1" style="width:100%;height:100%">
+                </div>
+                <div id="week8div14" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img4.jpg" draggable="true" ondragstart="drag(event)" id="drag3" style="width:100%;height:100%">
+                </div>
+                <div id="week8div15" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img1.jpg" draggable="true" ondragstart="drag(event)" id="drag0" style="width:100%;height:100%">
+                </div>
+                <div id="week8div16" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img7.jpg" draggable="true" ondragstart="drag(event)" id="drag6" style="width:100%;height:100%">
+                </div>
+                <div id="week8div17" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="images/week8img5.jpg" draggable="true" ondragstart="drag(event)" id="drag4" style="width:100%;height:100%">
+                </div>
+            </div>
+
+            <!--second half of page containing empty tiles for puzzle pieces-->
+            <div class="halfPanel">
+                <div id="week8div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="week8div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <footer class="footer">
+        &copy;2018 Daniel Khateeb. All Rights Reserved. Accessed on
+        <script>document.write(new Date().toDateString());</script>.
+    </footer>
+</body><!--end body-->
+</html><!--end html-->

@@ -1,0 +1,40 @@
+﻿.body { /*body display*/
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'HP Simplified';
+    background-color: #4800ff;
+}
+.container h1 { /*h1 display*/
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    color: #4800ff;
+    display: inline-block;
+}
+.container img {
+    text-align: center;
+}
+.row h2 {
+    font-size: 32px;
+    color: #000000;
+    font-weight: bolder;
+}
+.row p { /*paragraph options inside row*/
+    color: #ffffff;
+}
+.footer { /*footer options*/
+     color: ##4800ff;
+     background-color: #ffffff;
+     font-weight: bolder;
+     font-size: 18px;
+ }
+.center { /*provided id for style option*/
+    width: 100px;
+    height: 100px;
+    margin-right: 0px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 12px;
+    display: inline-block;
+}
